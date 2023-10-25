@@ -1,0 +1,32 @@
+.class1 {
+    display: block;
+    text-align: center;
+  }
+li{
+    display: inline-block;
+    border: solid#333;
+    list-style-type: square;
+    padding: 5px;
+    background-color: #333;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  li a:visited{
+    color: white;
+
+  
+  }
+  ul{
+    display: inline-block;
+    border: solid#333;
+    list-style-type: square;
+    padding: 10px;
+    background-color: #333;
+    list-style-type: none;
+
+
+  }
+  li:hover{
+    background-color: #333;
+  }
