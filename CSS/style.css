@@ -106,3 +106,71 @@ li{
         footer p {
         font-size: 14px;
         }
+/*CSS cONTACT*/
+        #pc{
+          text-align: center;
+          font-size: 45px;
+          color: black;
+        }
+        .divC{
+          border: solid;
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          background-color: aqua;
+        }
+        
+    
+        .droite{
+      justify-content: space-between;
+          
+        display: inline-block;
+        }
+
+        
+        .imC{
+          
+            max-width: 15px;
+            
+          
+        }
+        
+        .div_left{
+          width: 20px;
+          height: 50px;
+          justify-content: center;
+          display: inline-block;
+        }
+        .div_rigth{
+          display: inline-block;
+        }
+        button{
+          background-color: bisque;
+        }
+        .class4{
+          color:bisque;
+          column-count: 2;
+          column-gap: 20px;
+          column-rule: 4px dotted black;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          background-image: url(../image/image_tel.avif);
+        }
+
+        /* CSS REALISATIONS*/
+
+        h3{
+          text-align: center;
+          
+        }
+
+        .divC{
+          border: solid;
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          background-color:beige;
+        }
+
+       
+        
