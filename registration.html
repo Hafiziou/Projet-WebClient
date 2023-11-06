@@ -35,19 +35,35 @@
             </div>
         </div>
     </header>
-    <main class="about-page">
-        <section class="about-content">
-            <img src="about.png" alt="">
-            <h2>About Us</h2>
-            <p>We are a passionate team dedicated to providing high-quality programming courses and services. With years of experience, we aim to empower individuals and businesses through education and technology.</p>
+    <main class="registration-page">
+        <section class="registration-content">
+            <h2>Register for Our Courses</h2>
+            <p>Join our courses to enhance your programming skills and boost your career.</p>
         </section>
-        <section class="cta-section">
-            <h3>Ready to Learn?</h3>
-            <p>Explore our courses and enhance your programming skills today.</p>
-            <a href="mailto:contact@example.com" class="cta-button">Email Us</a>
+        <section class="registration-form">
+            <form>
+                <label for="registration-name">Name:</label>
+                <input type="text" id="registration-name" name="registration-name" required>
+
+                <label for="registration-email">Email:</label>
+                <input type="email" id="registration-email" name="registration-email" required>
+
+                <label for="registration-password">Password:</label>
+                <input type="password" id="registration-password" name="registration-password" required>
+
+                <label for="course-selection">Select Course:</label>
+                <select id="course-selection" name="course-selection" required>
+                    <option value="">Select a Course</option>
+                    <option value="course1">Course 1</option>
+                    <option value="course2">Course 2</option>
+                    <option value="course3">Course 3</option>
+                </select>
+
+                <button type="submit" class="registration-cta-button">Register</button>
+            </form>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="left-content">
             <a href="https://github.com/yourusername" target="_blank">GitHub</a>

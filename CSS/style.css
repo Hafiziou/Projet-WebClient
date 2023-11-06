@@ -1,180 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-header{
-  background-color: bisque;
-  
-
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Inter", sans-serif;
 }
-a{
+
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+header {
+  background-color: #00b22d;
+  padding: 10px 20px;
+}
+.header-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
   text-decoration: none;
-  
-}
-h1{
-  text-align: center;
-  padding: 30px;
-}
-#CITE{
-  color:  chocolate;
+  font-weight: bold;
 }
 
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
 
-.class1 {
-    display: block;
-    text-align: center;
-  }
-li{
-    display: inline-block;
-    border: solid whitesmoke;
-    list-style-type: square;
-    padding: 10px;
-    background-color: burlywood;
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    
-  }
-  
-  ul{
-    display: inline-block;
-    border: solid wheat;
-    list-style-type: square;
-    padding: 15px;
-    margin: 20px;
-    background-color:white;
-    list-style-type: none;
+.navbar li {
+  margin: 0 15px;
+}
 
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
 
-  }
-  li:hover{
-    background-color: #089551;
-    border: double 10px;
-  }
+.navbar a:hover {
+  border-bottom: 2px solid #efefef;
+}
 
-  img{
-  width: 100%;
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: transparent;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: rgba(0, 179, 45, 0.7);
+}
+
+.hero-image img {
+  max-width: 100%;
   height: auto;
-  }
+}
+.hero div {
+  flex: 1;
+}
+/* services section */
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  max-width: 1120px; /* Maximum width of 1120px */
+  margin: 0 auto; /* Center the service boxes */
+}
 
-  h1{
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  
+.service-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #00b22d;
+  border-radius: 5px;
+  transition: border-width 0.3s ease;
+  flex: 1;
+  margin: 0 10px;
+}
 
-  .class2 {
-    column-count: 2;
-    column-gap: 20px;
-    column-rule: 4px dotted rgb(79, 185, 227);
-    margin-top: 5px;
-  }
+.service-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
-  .img-aprpos{
-    width: 700px ;
-    height: 400px;
-      }
+.service-icon img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
 
-      .h2{
-        text-align: center;
-      }
+.service-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
 
-      .class3 {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-      }
+.service-box p {
+  font-size: 16px;
+}
 
-      .p1:hover{
-        border: double 10px;
-  }
+.before-footer {
+  min-height: 400px;
+  background-image: url("path/to/your/image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 179, 45, 0.2);
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.content-wrapper {
+  text-align: center;
+}
 
-      
-      .p1{
-        flex-basis: 30%;
-        padding: 20px;
-        background-color: #f2f2f2;
-        border-radius: 5px;
-      }
+.before-footer h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-      footer {
-        background-color:bisque;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-        }
-        
-        footer p {
-        font-size: 14px;
-        }
-/*CSS cONTACT*/
-        #pc{
-          text-align: center;
-          font-size: 45px;
-          color: black;
-        }
-        .divC{
-          border: solid;
-          display: flex;
-          justify-content: center; 
-          align-items: center;
-          background-color: aqua;
-        }
-        
-    
-        .droite{
-      justify-content: space-between;
-          
-        display: inline-block;
-        }
+.before-footer p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 
-        
-        .imC{
-          
-            max-width: 15px;
-            
-          
-        }
-        
-        .div_left{
-          width: 20px;
-          height: 50px;
-          justify-content: center;
-          display: inline-block;
-        }
-        .div_rigth{
-          display: inline-block;
-        }
-        button{
-          background-color: bisque;
-        }
-        .class4{
-          color:black;
-          column-count: 2;
-          column-gap: 20px;
-          column-rule: 4px dotted black;
-          margin-top: 5px;
-          margin-bottom: 10px;
-          background-image:
-        }
+.before-footer .cta-button {
+  padding: 15px 30px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
 
-        /* CSS REALISATIONS*/
+.before-footer .cta-button:hover {
+  background-color: rgba(0, 179, 45, 0.7);
+}
 
-        h3{
-          text-align: center;
-          
-        }
+.footer {
+  background-color: #00b22d; /* Primary background color */
+  color: #fff; /* White text color */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  max-width: 1120px;
+  margin: auto;
+}
 
-        .divC{
-          border: solid;
-          display: flex;
-          justify-content: center; 
-          align-items: center;
-          background-color:beige;
-        }
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
 
-        .pr{
-          font-size: 20px;
-        }
+.footer a:hover {
+  text-decoration: underline;
+}
 
-       
-        
+.right-content span {
+  margin-left: 20px;
+}
+/* About page */
+.about-page {
+  color: #111;
+  padding: 50px 20px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #efefef;
+  color: #111;
+}
+
+/* contact page */
+.contact-page {
+  color: #111;
+  padding: 50px 20px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.contact-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-form form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-form input {
+  padding: 10px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .contact-cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .contact-cta-button:hover {
+  background-color: #efefef;
+  color: #111;
+}
+
+/* registration page */
+.registration-page {
+  color: #111;
+  padding: 50px 20px;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.registration-content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.registration-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.registration-content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.registration-form form {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.registration-form label,
+.registration-form input,
+.registration-form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.registration-form input, select {
+    padding: 10px;
+}
+.registration-form .registration-cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form .registration-cta-button:hover {
+  background-color: #efefef;
+  color: #111;
+}
