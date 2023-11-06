@@ -97,7 +97,7 @@ li{
       }
 
       footer {
-        background-color: #333;
+        background-color:bisque;
         color: #fff;
         padding: 20px;
         text-align: center;
@@ -148,13 +148,13 @@ li{
           background-color: bisque;
         }
         .class4{
-          color:bisque;
+          color:black;
           column-count: 2;
           column-gap: 20px;
           column-rule: 4px dotted black;
           margin-top: 5px;
           margin-bottom: 10px;
-          background-image: url(../image/image_tel.avif);
+          background-image:
         }
 
         /* CSS REALISATIONS*/
