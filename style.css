@@ -113,12 +113,17 @@ header {
   flex: 1;
 }
 /* services section */
+.services-container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
 .services {
   display: flex;
   justify-content: space-around;
   padding: 50px 20px;
-  max-width: 1120px; /* Maximum width of 1120px */
-  margin: 0 auto; /* Center the service boxes */
+  max-width: 1120px;
+  margin: 0 auto;
 }
 
 .service-box {
@@ -149,7 +154,87 @@ header {
 .service-box p {
   font-size: 16px;
 }
+/* Reviews */
+#reviews-container {
+  max-width: 1120px;
+  margin: auto;
+  margin-bottom: 50px;
+  min-height: 250px;
+  border-top: 1px solid #007d1f7e;
+  border-bottom: 1px solid #007d1f7e;
+  padding: 50px;
+}
+#reviews-container h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
 
+.review-slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.review-slider-item {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-slider-image {
+  display: block;
+}
+
+.review-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.profile img {
+  max-width: 40px;
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls-dot {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #00b22d;
+  font-weight: bold;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.controls-dot:hover {
+  text-decoration: underline;
+}
+
+/* Before footer */
 .before-footer {
   min-height: 400px;
   background-image: url("path/to/your/image.jpg");
@@ -196,8 +281,8 @@ header {
 }
 
 .footer {
-  background-color: #00b22d; /* Primary background color */
-  color: #fff; /* White text color */
+  background-color: #00b22d;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;
@@ -371,8 +456,9 @@ header {
   width: 100%;
   margin-bottom: 20px;
 }
-.registration-form input, select {
-    padding: 10px;
+.registration-form input,
+select {
+  padding: 10px;
 }
 .registration-form .registration-cta-button {
   display: inline-block;
@@ -388,4 +474,106 @@ header {
 .registration-form .registration-cta-button:hover {
   background-color: #efefef;
   color: #111;
+}
+
+/* blog page */
+.headings {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headings h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.headings p {
+  font-size: 18px;
+}
+.blog-container,
+.headings,
+.faq-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 20px), 1fr));
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+
+.blog {
+  border: 1px solid #efefef;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.blog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.blog h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.blog p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.blog a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00b22d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.blog a:hover {
+  background-color: #007d1f;
+}
+
+/* FAQ page */
+.faq {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.faq-headings {
+  min-height: 100px;
+  padding-top: 100px;
+}
+
+.faq-question {
+  display: block;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  border: 1px solid rgba(0, 179, 45, 0.5);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .faq-question + .faq-answer {
+  display: block;
 }
