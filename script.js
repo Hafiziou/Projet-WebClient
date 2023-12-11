@@ -39,22 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function submitContactForm() {
-    const form = document.getElementById('contactForm');
+  const form = document.getElementById('contactForm');
 
-    // Extract form data
-    const name = document.getElementById('contact-name').value;
-    const email = document.getElementById('contact-email').value;
-    const message = document.getElementById('contact-message').value;
+  // Extract form data
+  const name = document.getElementById('contact-name').value;
+  const email = document.getElementById('contact-email').value;
+  const message = document.getElementById('contact-message').value;
 
-    // Create a text string with form data
-    const formData = `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\n`;
+  // Create a text string with form data
+  const formData = `Name: ${name}\nEmail: ${email}\nMessage: ${message}\n\n`;
 
-    const dataUri = 'data:text/plain;charset=utf-8,' + encodeURIComponent(formData);
+  const dataUri = 'data:text/plain;charset=utf-8,' + encodeURIComponent(formData);
 
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = dataUri;
-    link.download = 'contactData.txt';
+  // Create a link element
+  const link = document.createElement('a');
+  link.href = dataUri;
+  link.download = 'contactData.txt';
 
     // Append the link to the document
     document.body.appendChild(link);
